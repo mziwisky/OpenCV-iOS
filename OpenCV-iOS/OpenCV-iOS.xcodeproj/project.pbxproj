@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				E2EFF81016EEBB23007FD3C9 /* PBXTargetDependency */,
 				AB1D025C16D9FDBF00E9AA4B /* PBXTargetDependency */,
 				ABC8289E135E899300F4D611 /* PBXTargetDependency */,
 				ABC828A0135E899300F4D611 /* PBXTargetDependency */,
@@ -624,6 +625,17 @@
 		AB3D41B41364EB22008FCC43 /* crt_externs.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3D41A61364EB22008FCC43 /* crt_externs.h */; };
 		AB3D41B51364EB22008FCC43 /* crt_externs.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3D41A61364EB22008FCC43 /* crt_externs.h */; };
 		AB3D41B61364EB22008FCC43 /* crt_externs.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3D41A61364EB22008FCC43 /* crt_externs.h */; };
+		E2EFF83716EEBBA6007FD3C9 /* denoising.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2EFF82716EEBBA6007FD3C9 /* denoising.cpp */; };
+		E2EFF83816EEBBA6007FD3C9 /* inpaint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2EFF82B16EEBBA6007FD3C9 /* inpaint.cpp */; };
+		E2EFF83916EEBBA6007FD3C9 /* precomp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2EFF82C16EEBBA6007FD3C9 /* precomp.cpp */; };
+		E2EFF83F16EEBC04007FD3C9 /* crt_externs.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3D41A61364EB22008FCC43 /* crt_externs.h */; };
+		E2EFF84016EEBC15007FD3C9 /* photo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF81E16EEBBA6007FD3C9 /* photo.hpp */; };
+		E2EFF84116EEBC18007FD3C9 /* photo_c.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF81F16EEBBA6007FD3C9 /* photo_c.h */; };
+		E2EFF84216EEBC22007FD3C9 /* arrays.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF82616EEBBA6007FD3C9 /* arrays.hpp */; };
+		E2EFF84316EEBC27007FD3C9 /* fast_nlmeans_denoising_invoker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF82816EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker.hpp */; };
+		E2EFF84416EEBC2F007FD3C9 /* fast_nlmeans_denoising_invoker_commons.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF82916EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker_commons.hpp */; };
+		E2EFF84516EEBC33007FD3C9 /* fast_nlmeans_multi_denoising_invoker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF82A16EEBBA6007FD3C9 /* fast_nlmeans_multi_denoising_invoker.hpp */; };
+		E2EFF84616EEBC3A007FD3C9 /* precomp.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2EFF82D16EEBBA6007FD3C9 /* precomp.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1033,6 +1045,27 @@
 			remoteGlobalIDString = ABC820EF135E754400F4D611;
 			remoteInfo = libpng;
 		};
+		E2EFF80F16EEBB23007FD3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2EFF80216EEBB09007FD3C9;
+			remoteInfo = opencv_photo;
+		};
+		E2EFF81116EEBB3C007FD3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC823A1135E767D00F4D611;
+			remoteInfo = opencv_core;
+		};
+		E2EFF81316EEBB3E007FD3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABC82403135E77A600F4D611;
+			remoteInfo = opencv_imgproc;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -1098,7 +1131,6 @@
 		AB1D023C16D9FD7300E9AA4B /* precomp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = precomp.hpp; sourceTree = "<group>"; };
 		AB1D023D16D9FD7300E9AA4B /* sift.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sift.cpp; sourceTree = "<group>"; };
 		AB1D023E16D9FD7300E9AA4B /* surf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = surf.cpp; sourceTree = "<group>"; };
-		AB1D025F16D9FE6B00E9AA4B /* libopencv_highgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libopencv_highgui.a; path = "/Users/jonathan/svnCheckouts/OpenCV-iOS/OpenCV-iOS/build/Release-iphoneos/libopencv_highgui.a"; sourceTree = "<absolute>"; };
 		AB1D026316DA001D00E9AA4B /* libopencv_nonfree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_nonfree.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1DF97816D9ED4000E9AA4B /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
 		AB1DF97B16D9ED4000E9AA4B /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
@@ -1618,6 +1650,18 @@
 		ABC8267D135E818000F4D611 /* libopencv_ml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_ml.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC8280A135E874800F4D611 /* libopencv_legacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_legacy.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC82873135E889600F4D611 /* libopencv_contrib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_contrib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EFF7FD16EEB97B007FD3C9 /* libopencv_highgui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_highgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EFF80316EEBB09007FD3C9 /* libopencv_photo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopencv_photo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EFF81E16EEBBA6007FD3C9 /* photo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = photo.hpp; sourceTree = "<group>"; };
+		E2EFF81F16EEBBA6007FD3C9 /* photo_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = photo_c.h; sourceTree = "<group>"; };
+		E2EFF82616EEBBA6007FD3C9 /* arrays.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arrays.hpp; sourceTree = "<group>"; };
+		E2EFF82716EEBBA6007FD3C9 /* denoising.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = denoising.cpp; sourceTree = "<group>"; };
+		E2EFF82816EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_nlmeans_denoising_invoker.hpp; sourceTree = "<group>"; };
+		E2EFF82916EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker_commons.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_nlmeans_denoising_invoker_commons.hpp; sourceTree = "<group>"; };
+		E2EFF82A16EEBBA6007FD3C9 /* fast_nlmeans_multi_denoising_invoker.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fast_nlmeans_multi_denoising_invoker.hpp; sourceTree = "<group>"; };
+		E2EFF82B16EEBBA6007FD3C9 /* inpaint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inpaint.cpp; sourceTree = "<group>"; };
+		E2EFF82C16EEBBA6007FD3C9 /* precomp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = precomp.cpp; sourceTree = "<group>"; };
+		E2EFF82D16EEBBA6007FD3C9 /* precomp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = precomp.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1733,6 +1777,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2EFF80016EEBB09007FD3C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1743,6 +1794,8 @@
 				ABA029D81573DA1D00BC966A /* Frameworks */,
 				ABC81F8C135E730D00F4D611 /* Products */,
 				AB1D026316DA001D00E9AA4B /* libopencv_nonfree.a */,
+				E2EFF7FD16EEB97B007FD3C9 /* libopencv_highgui.a */,
+				E2EFF80316EEBB09007FD3C9 /* libopencv_photo.a */,
 			);
 			name = "OpenCV-iOS";
 			sourceTree = "<group>";
@@ -2887,6 +2940,7 @@
 			isa = PBXGroup;
 			children = (
 				AB3D41A61364EB22008FCC43 /* crt_externs.h */,
+				E2EFF81516EEBBA6007FD3C9 /* photo */,
 				AB1D022A16D9FD7200E9AA4B /* nonfree */,
 				AB1DFFF516D9F7B700E9AA4B /* highgui */,
 				AB1DFF9916D9F70D00E9AA4B /* objdetect */,
@@ -2905,6 +2959,56 @@
 				AB1DF97716D9ED4000E9AA4B /* zlib */,
 			);
 			name = Source;
+			sourceTree = "<group>";
+		};
+		E2EFF81516EEBBA6007FD3C9 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFF81B16EEBBA6007FD3C9 /* include */,
+				E2EFF82516EEBBA6007FD3C9 /* src */,
+			);
+			name = photo;
+			path = "../opencv-svn/modules/photo";
+			sourceTree = "<group>";
+		};
+		E2EFF81B16EEBBA6007FD3C9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFF81C16EEBBA6007FD3C9 /* opencv2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E2EFF81C16EEBBA6007FD3C9 /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFF81D16EEBBA6007FD3C9 /* photo */,
+			);
+			path = opencv2;
+			sourceTree = "<group>";
+		};
+		E2EFF81D16EEBBA6007FD3C9 /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFF81E16EEBBA6007FD3C9 /* photo.hpp */,
+				E2EFF81F16EEBBA6007FD3C9 /* photo_c.h */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		E2EFF82516EEBBA6007FD3C9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFF82616EEBBA6007FD3C9 /* arrays.hpp */,
+				E2EFF82716EEBBA6007FD3C9 /* denoising.cpp */,
+				E2EFF82816EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker.hpp */,
+				E2EFF82916EEBBA6007FD3C9 /* fast_nlmeans_denoising_invoker_commons.hpp */,
+				E2EFF82A16EEBBA6007FD3C9 /* fast_nlmeans_multi_denoising_invoker.hpp */,
+				E2EFF82B16EEBBA6007FD3C9 /* inpaint.cpp */,
+				E2EFF82C16EEBBA6007FD3C9 /* precomp.cpp */,
+				E2EFF82D16EEBBA6007FD3C9 /* precomp.hpp */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3221,6 +3325,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2EFF83E16EEBBF4007FD3C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EFF83F16EEBC04007FD3C9 /* crt_externs.h in Headers */,
+				E2EFF84016EEBC15007FD3C9 /* photo.hpp in Headers */,
+				E2EFF84116EEBC18007FD3C9 /* photo_c.h in Headers */,
+				E2EFF84216EEBC22007FD3C9 /* arrays.hpp in Headers */,
+				E2EFF84316EEBC27007FD3C9 /* fast_nlmeans_denoising_invoker.hpp in Headers */,
+				E2EFF84416EEBC2F007FD3C9 /* fast_nlmeans_denoising_invoker_commons.hpp in Headers */,
+				E2EFF84516EEBC33007FD3C9 /* fast_nlmeans_multi_denoising_invoker.hpp in Headers */,
+				E2EFF84616EEBC3A007FD3C9 /* precomp.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -3263,7 +3382,7 @@
 			);
 			name = opencv_highgui;
 			productName = opencv_features2d;
-			productReference = AB1D025F16D9FE6B00E9AA4B /* libopencv_highgui.a */;
+			productReference = E2EFF7FD16EEB97B007FD3C9 /* libopencv_highgui.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		ABC81FEC135E743800F4D611 /* zlib */ = {
@@ -3538,11 +3657,33 @@
 			productReference = ABC82873135E889600F4D611 /* libopencv_contrib.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		E2EFF80216EEBB09007FD3C9 /* opencv_photo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2EFF80C16EEBB09007FD3C9 /* Build configuration list for PBXNativeTarget "opencv_photo" */;
+			buildPhases = (
+				E2EFF83E16EEBBF4007FD3C9 /* Headers */,
+				E2EFF7FF16EEBB09007FD3C9 /* Sources */,
+				E2EFF80016EEBB09007FD3C9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2EFF81216EEBB3C007FD3C9 /* PBXTargetDependency */,
+				E2EFF81416EEBB3E007FD3C9 /* PBXTargetDependency */,
+			);
+			name = opencv_photo;
+			productName = opencv_photo;
+			productReference = E2EFF80316EEBB09007FD3C9 /* libopencv_photo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "OpenCV-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -3575,6 +3716,7 @@
 				ABC820EF135E754400F4D611 /* libpng */,
 				ABA029E41573DA5600BC966A /* opencv_highgui */,
 				AB1D01B116D9FD4500E9AA4B /* opencv_nonfree */,
+				E2EFF80216EEBB09007FD3C9 /* opencv_photo */,
 			);
 		};
 /* End PBXProject section */
@@ -4081,6 +4223,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E2EFF7FF16EEBB09007FD3C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2EFF83716EEBBA6007FD3C9 /* denoising.cpp in Sources */,
+				E2EFF83816EEBBA6007FD3C9 /* inpaint.cpp in Sources */,
+				E2EFF83916EEBBA6007FD3C9 /* precomp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4374,6 +4526,21 @@
 			target = ABC820EF135E754400F4D611 /* libpng */;
 			targetProxy = ABC828BB135E899300F4D611 /* PBXContainerItemProxy */;
 		};
+		E2EFF81016EEBB23007FD3C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2EFF80216EEBB09007FD3C9 /* opencv_photo */;
+			targetProxy = E2EFF80F16EEBB23007FD3C9 /* PBXContainerItemProxy */;
+		};
+		E2EFF81216EEBB3C007FD3C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC823A1135E767D00F4D611 /* opencv_core */;
+			targetProxy = E2EFF81116EEBB3C007FD3C9 /* PBXContainerItemProxy */;
+		};
+		E2EFF81416EEBB3E007FD3C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABC82403135E77A600F4D611 /* opencv_imgproc */;
+			targetProxy = E2EFF81316EEBB3E007FD3C9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -4381,13 +4548,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../opencv-svn/**";
-				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -4396,12 +4563,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LIBRARY = "libc++";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "../opencv-svn/**";
-				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -4410,6 +4577,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4426,7 +4594,7 @@
 					"../generatedHeaders/**",
 					"../opencv-svn/modules/nonfree/include/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_nonfree;
 				SDKROOT = iphoneos;
 			};
@@ -4436,9 +4604,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/highgui/include",
 					"../opencv-svn/modules/legacy/include",
@@ -4452,7 +4620,7 @@
 					"../generatedHeaders/**",
 					"../opencv-svn/modules/nonfree/include/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_nonfree;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4463,6 +4631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4474,7 +4643,7 @@
 					"../generatedHeaders/**",
 					"../opencv-svn/",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_highgui;
 				SDKROOT = iphoneos;
 			};
@@ -4484,9 +4653,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/core/include",
@@ -4495,7 +4664,7 @@
 					"../generatedHeaders/**",
 					"../opencv-svn/",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_highgui;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4506,11 +4675,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = "../opencv-svn/3rdparty/zlib";
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = zlib;
 				SDKROOT = iphoneos;
 			};
@@ -4520,11 +4690,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = "../opencv-svn/3rdparty/zlib";
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = zlib;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4535,10 +4705,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = libjpeg;
 				SDKROOT = iphoneos;
 			};
@@ -4548,10 +4719,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = libjpeg;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4562,6 +4733,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4569,7 +4741,7 @@
 					"../opencv-svn/3rdparty/include",
 					"../opencv-svn/3rdparty/libpng",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = libpng;
 				SDKROOT = iphoneos;
 			};
@@ -4579,14 +4751,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/3rdparty/include",
 					"../opencv-svn/3rdparty/libpng",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = libpng;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4597,6 +4769,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4605,7 +4778,7 @@
 					"../opencv-svn/modules/core",
 					"\"$(SRCROOT)/../generatedHeaders",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_core;
 				SDKROOT = iphoneos;
 			};
@@ -4615,15 +4788,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/core",
 					"\"$(SRCROOT)/../generatedHeaders",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_core;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4634,6 +4807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4641,7 +4815,7 @@
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/imgproc/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_imgproc;
 				SDKROOT = iphoneos;
 			};
@@ -4651,14 +4825,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/imgproc/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_imgproc;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4669,6 +4843,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4676,7 +4851,7 @@
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_flann;
 				SDKROOT = iphoneos;
 			};
@@ -4686,14 +4861,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_flann;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4704,6 +4879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4713,7 +4889,7 @@
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_features2d;
 				SDKROOT = iphoneos;
 			};
@@ -4723,16 +4899,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/features2d/include",
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_features2d;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4743,6 +4919,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4753,7 +4930,7 @@
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/features2d/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_calib3d;
 				SDKROOT = iphoneos;
 			};
@@ -4763,9 +4940,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/calib3d/include",
@@ -4773,7 +4950,7 @@
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/features2d/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_calib3d;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4784,6 +4961,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4797,7 +4975,7 @@
 					"../opencv-svn/modules/objdetect/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_objdetect;
 				SDKROOT = iphoneos;
 			};
@@ -4807,9 +4985,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/highgui/include",
 					"../opencv-svn/modules/features2d/include",
@@ -4820,7 +4998,7 @@
 					"../opencv-svn/modules/objdetect/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_objdetect;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4831,6 +5009,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4840,7 +5019,7 @@
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/features2d/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_ts;
 				SDKROOT = iphoneos;
 			};
@@ -4850,16 +5029,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/core/include",
 					"../opencv-svn/modules/ts/include",
 					"../opencv-svn/modules/flann/include",
 					"../opencv-svn/modules/features2d/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_ts;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4870,6 +5049,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4878,7 +5058,7 @@
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_video;
 				SDKROOT = iphoneos;
 			};
@@ -4888,15 +5068,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/video/include",
 					"../opencv-svn/modules/imgproc/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_video;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4907,6 +5087,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4914,7 +5095,7 @@
 					"../opencv-svn/modules/ml/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_ml;
 				SDKROOT = iphoneos;
 			};
@@ -4924,14 +5105,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/ml/include",
 					"../opencv-svn/modules/core/include",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_ml;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4942,6 +5123,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -4957,7 +5139,7 @@
 					"../opencv-svn/modules/ml/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_legacy;
 				SDKROOT = iphoneos;
 			};
@@ -4967,9 +5149,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/highgui/include",
 					"../opencv-svn/modules/legacy/include",
@@ -4982,7 +5164,7 @@
 					"../opencv-svn/modules/ml/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_legacy;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -4993,6 +5175,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -5009,7 +5192,7 @@
 					"../opencv-svn/modules/calib3d/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_contrib;
 				SDKROOT = iphoneos;
 			};
@@ -5019,9 +5202,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					"../opencv-svn/modules/highgui/include",
 					"../opencv-svn/modules/contrib/include",
@@ -5035,7 +5218,7 @@
 					"../opencv-svn/modules/calib3d/include",
 					"../generatedHeaders/**",
 				);
-				PREBINDING = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = opencv_contrib;
 				SDKROOT = iphoneos;
 				ZERO_LINK = NO;
@@ -5048,6 +5231,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 			};
 			name = Debug;
@@ -5057,8 +5241,76 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		E2EFF80D16EEBB09007FD3C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN_INT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = "/tmp/OpenCV-iOS.dst";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = (
+					"../opencv-svn/modules/photo/include",
+					"../opencv-svn/modules/core/include",
+					"../opencv-svn/modules/imgproc/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				ZERO_LINK = "";
+			};
+			name = Debug;
+		};
+		E2EFF80E16EEBB09007FD3C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_CONSTANT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN_INT_CONVERSION = "$(CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION)";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = "/tmp/OpenCV-iOS.dst";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				HEADER_SEARCH_PATHS = (
+					"../opencv-svn/modules/photo/include",
+					"../opencv-svn/modules/core/include",
+					"../opencv-svn/modules/imgproc/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				VALIDATE_PRODUCT = NO;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -5224,6 +5476,15 @@
 			buildConfigurations = (
 				ABC8289B135E898900F4D611 /* Debug */,
 				ABC8289C135E898900F4D611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2EFF80C16EEBB09007FD3C9 /* Build configuration list for PBXNativeTarget "opencv_photo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2EFF80D16EEBB09007FD3C9 /* Debug */,
+				E2EFF80E16EEBB09007FD3C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
